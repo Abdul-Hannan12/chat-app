@@ -1,0 +1,14 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "this is a node.js based chat app made with socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hannan",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.5.3"
+  }
+}
