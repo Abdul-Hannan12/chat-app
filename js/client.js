@@ -22,7 +22,14 @@ const append = (message, status)=>{
 
 };
 
-if (sessionStorage.getItem('name') == null){
+const name = sessionStorage.getItem('name');
+
+if (name){
+
+    const name = sessionStorage.getItem('name');
+    socket.emit('new-user-joined', name);
+
+} else {
 
     swal("Enter Your Name:", {
         content: "input",
@@ -32,12 +39,8 @@ if (sessionStorage.getItem('name') == null){
         socket.emit('new-user-joined', name);
         sessionStorage.setItem('name', name);
     });
-    
-}else{
-    const name = sessionStorage.getItem('name');
-    socket.emit('new-user-joined', name);
-}
-  
+
+}  
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
