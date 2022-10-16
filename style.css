@@ -36,6 +36,13 @@ body{
     clear: both;
 }
 
+.joined{
+    margin: auto;
+    clear: both;
+    text-align: center;
+    margin-top: 1px;
+}
+
 .send{
     text-align: center;
 }
