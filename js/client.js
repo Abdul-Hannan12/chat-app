@@ -22,7 +22,7 @@ const append = (message, status)=>{
 
 };
 
-const name = prompt("Enter your name to join");
+// const name = prompt("Enter your name to join");
 
 socket.emit('new-user-joined', name);
 
