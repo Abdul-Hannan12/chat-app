@@ -22,9 +22,22 @@ const append = (message, status)=>{
 
 };
 
-// const name = prompt("Enter your name to join");
+if (sessionStorage.getItem('name') == null){
 
-socket.emit('new-user-joined', name);
+    swal("Enter Your Name:", {
+        content: "input",
+    })
+    .then((name) => {
+        swal(`Welcome to the chat ${name}`);
+        socket.emit('new-user-joined', name);
+        sessionStorage.setItem('name', name);
+    });
+    
+}else{
+    const name = sessionStorage.getItem('name');
+    socket.emit('new-user-joined', name);
+}
+  
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();

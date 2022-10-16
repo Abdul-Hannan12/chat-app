@@ -17,16 +17,6 @@ html{
     margin-top: 5px;
 }
 
-/* .container{
-    height: 70vh;
-    border: 2px solid black;
-    width: 80vw;
-    margin: 10px auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border-radius: 15px;
-} */
-
 .main{
     display: flex;
     justify-content: center;
