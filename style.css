@@ -17,7 +17,7 @@ html{
     margin-top: 5px;
 }
 
-.container{
+/* .container{
     height: 70vh;
     border: 2px solid black;
     width: 80vw;
@@ -25,6 +25,26 @@ html{
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 15px;
+} */
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    border: 2px solid black;
+    width: 80vw;
+    margin: 10px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70vh;
 }
 
 /* width */
