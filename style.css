@@ -36,7 +36,7 @@ body{
     clear: both;
 }
 
-.joined{
+.alert{
     margin: auto;
     clear: both;
     text-align: center;
@@ -55,4 +55,5 @@ body{
 .btn{
     padding: 10px 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
