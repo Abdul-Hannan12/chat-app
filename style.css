@@ -37,6 +37,8 @@ html{
     height: 70vh;
 }
 
+/* <custom scrollbar> */
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -58,6 +60,8 @@ html{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(111, 226, 188); 
   }
+
+  /* </custom scrollbar> */
 
 .message{
     border: 2px solid black;
@@ -85,14 +89,25 @@ html{
     clear: both;
     text-align: center;
     margin-top: 1px;
+    background-color: rgb(255, 192, 160);
 }
 
 .send{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
 }
 
 .input{
-    width: 74%;
+    width: 90%;
     height: 40px;
     border-radius: 5px;
     font-size: 22px;
@@ -100,7 +115,8 @@ html{
 }
 
 .btn{
-    padding: 10px 15px;
+    width: 9%;
+    padding: 8px 05px;
     border-radius: 5px;
     cursor: pointer;
 }
