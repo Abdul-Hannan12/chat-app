@@ -45,9 +45,12 @@ if (name){
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
     const message = msg_input.value;
-    append(`You: ${message}`, 'sent');
-    socket.emit('send', message);
-    msg_input.value = "";
+    if (message != ""  && message != " "){
+
+        append(`You: ${message}`, 'sent');
+        socket.emit('send', message);
+        msg_input.value = "";
+    }
 });
 
 socket.on('user-joined', name => {
